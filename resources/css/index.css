@@ -59,18 +59,35 @@ header {
 }
 header .logo a {
     padding: .5rem;
-    border: 1px solid rgb(215, 215, 215);
     color: rgb(215, 215, 215);
 }
-header .logo a:hover {
+header .logo #desktop {
+    border: 1px solid rgb(215, 215, 215);
+}
+header .logo {
+    display: inline-flex;
+    align-items: end;
+}
+header .logo-image-container {
+    width: 50%;
+    margin: 0;
+}
+header .logo-image-container img {
+    width: 100%;
+}
+header .logo #desktop:hover {
     color: #070707;
     border: 1px solid #070707;
+}
+header .logo #mobile:hover {
+    padding: .75rem;
+    filter: grayscale(100%);
 }
 header .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     margin: 0 2rem;
 }
 header ul li {
@@ -266,7 +283,7 @@ footer p {
 
 /* Screen < 654px */
 
-@media only screen and (max-width: 654px) {
+@media only screen and (max-width: 675px) {
     #desktop {
         display: none;
     }
@@ -320,7 +337,7 @@ footer p {
 
 /* Small phone 375px (iPhone SE) */
 
-@media only screen and (max-width: 375px) and (orientation: portrait) {
+@media only screen and (max-width: 379px) and (orientation: portrait) {
     
     h1 {
         font-size: 1.5rem;
@@ -351,6 +368,10 @@ footer p {
     }
     footer p {
         font-size: .75rem;
+    }
+    header .logo {
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
 }
