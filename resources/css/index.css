@@ -1,0 +1,356 @@
+/* Main content */
+
+html {
+    font-size: 16px;
+    color: #070707;
+    background-color: aliceblue;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+a {
+    color: #070707;
+    text-decoration: none;
+    letter-spacing: .3rem;
+}
+a:visited {
+    color: #070707;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgb(215, 215, 215);
+    letter-spacing: .1rem;
+}
+h2 {
+    font-family: 'Dancing Script';
+    font-size: 1.5rem;
+    color: rgb(215, 215, 215);
+}
+h3 {
+    font-family: 'Delicious Handrawn', sans-serif;
+}
+
+p {
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+#story-center {
+    text-align: center;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    height: 6rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(84,76,242,1) 0%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    z-index: 100;
+    border-bottom: 2px solid #070707;
+}
+header .logo a {
+    padding: .5rem;
+    border: 1px solid rgb(215, 215, 215);
+    color: rgb(215, 215, 215);
+}
+header .logo a:hover {
+    color: #070707;
+    border: 1px solid #070707;
+}
+header .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+}
+header ul li {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+header ul li a:hover {
+    color: rgb(215, 215, 215);
+}
+
+
+
+/* Story */
+
+
+.middle {
+    position: relative;
+    top: 1rem;
+    background-image: url(../images/London_Bridge2.JPG);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6rem;
+    margin: 5rem 15% 0 15%;
+    background-color: rgba(6, 1, 105, 0.5);
+}
+.middle-middle {
+    display: flex;
+    background-color: rgba(84,76,242,0.7);
+    height: 8rem;
+    margin: 0 15%;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(206, 244, 255, 0.7);
+    color: #070707;
+    padding: 1rem;
+    margin: 0 15%;
+}
+
+.middle-bottom {
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    background-color: rgb(188, 188, 188);
+    margin-top: 0;
+}
+
+
+/* Work */
+
+.work-content {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.polaroid-container {
+    width: 22%;
+    min-width: 12rem;
+    margin: 1rem;
+}
+
+.polaroid {
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: inline-block;
+        margin: 0;
+    }
+
+.image-container {
+    text-align: center;
+    width: auto;
+    padding: 2rem 2rem;
+}
+
+.image-container img {
+    width: 100%;
+}
+.polaroid h3 {
+    width: 100%;
+    margin-top: 0;
+}
+
+
+/* Contact */
+
+.contact {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    margin-bottom: 0;
+    background-color: aliceblue;
+    margin-bottom: 2rem;
+}
+.contact-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.contact-container {
+    display: block;
+    width: 30%;
+    overflow: hidden;
+    background-color: rgba(84,76,242,0.7);
+    margin: 1rem;
+}
+.contact-text {
+    display: flex;
+    flex-shrink: 2;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-container h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(215, 215, 215);
+    font-size: 100%;
+}
+.contact-container img {
+    display: block;
+    width: 100%;
+    margin: 1%;
+    padding: 0;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    border-top: 2px solid #070707;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(84,76,242,1) 0%, rgba(0,212,255,1) 100%);
+    margin: 0;
+    justify-content: center;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.footer-item-container {
+    width: 100%/3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    color: rgb(215, 215, 215);
+    margin: 0;
+    font-size: 1rem;
+    justify-items: center;
+}
+.footer-content a {
+    font-size: 1rem;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgb(215, 215, 215);
+    margin: auto 2rem;
+}
+.footer-item-container a {
+    margin: 0;
+    color: black;
+}
+.footer-item-container a:hover {
+    color: rgb(215, 215, 215);
+}
+
+
+/* MEDIA QUERIES*/
+
+/* Screen < 654px */
+
+@media only screen and (max-width: 654px) {
+    #desktop {
+        display: none;
+    }
+    header .content {
+        margin: 1rem;
+        justify-content: center;
+    }
+    header ul li {
+        padding: .5rem;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+
+    .headings {
+        padding: 0 6rem;
+        margin: 5rem 10% 0 10%;
+    }
+
+    .middle-middle {
+        height: 4rem;
+        margin: 0 10%;
+    }
+    .text {
+        padding: .5rem;
+        margin: 0 10%;
+    }
+
+    .polaroid-container {
+        width: 90%;
+    }
+    .contact-container {
+        width: 90%;
+        margin: 1rem;
+    }
+    footer p {
+        font-size: .75rem;
+    }
+    .footer-content a {
+        font-size: .75rem;
+        margin: auto 1rem;
+    }
+
+}
+
+/* Small phone 375px (iPhone SE) */
+
+@media only screen and (max-width: 375px) and (orientation: portrait) {
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+
+    header .content {
+        margin: 0;
+        height: auto;
+    }
+    header ul li {
+        display: block;
+        padding: .2rem 0 .2rem 0;
+    }
+    .headings {
+        padding: 0 6rem;
+        margin: 6rem 5% 0 5%;
+    }
+    .middle-middle {
+        height: 3rem;
+        margin: 0 5%;
+    }
+    .text {
+        padding: .5rem;
+        margin: 0 5%;
+    }
+    footer p {
+        font-size: .75rem;
+    }
+
+}
